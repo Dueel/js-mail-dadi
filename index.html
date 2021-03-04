@@ -38,26 +38,35 @@
       //   }
       // }
 
+      // VERSIONE 3
+      for (var i = 0; i < mailData.length; i++) {
+
+        if (mailUser === mailData[i]) {
+
+          console.log('Accesso consentito');
+        }
+      }
+
 
       // Sto lavorando ad una terza soluzione, no spoiler!
 
 
       // ESERCIZIO DADI
-      var numUser = prompt('Inserisci un numero da 1 a 6');
-      var numBot = Math.floor(Math.random() * 6 + 1);
-
-      console.log('Numero utene: ' + numUser, 'Numero computer: ' + numBot);
-
-      if (numUser > numBot) {
-
-        console.log('Hai vinto!');
-      } else if (numUser < numBot) {
-
-        console.log('Hai perso');
-      } else {
-
-        console.log('Pareggio');
-      }
+      // var numUser = prompt('Inserisci un numero da 1 a 6');
+      // var numBot = Math.floor(Math.random() * 6 + 1);
+      //
+      // console.log('Numero utene: ' + numUser, 'Numero computer: ' + numBot);
+      //
+      // if (numUser > numBot) {
+      //
+      //   console.log('Hai vinto!');
+      // } else if (numUser < numBot) {
+      //
+      //   console.log('Hai perso');
+      // } else {
+      //
+      //   console.log('Pareggio');
+      // }
 
     </script>
 
