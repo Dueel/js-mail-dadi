@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      // ESERCIZIO MAIL
+      var mailUser = prompt('Inserisci la tua mail');
+      var mailData = ['prova@mail.com', 'test@mail.com', 'mail@mail.com']
+
+      console.log('Mail user: ' + mailUser);
+      console.log('Mail database: ' + mailData);
+
+      // VERSIONE 1 - non ottimale perché funziona solo fino a che conosco la lunghezza del mio array
+      // if (mailUser == mailData[0] || mailData[1] || mailData[2]) {
+      //
+      //   console.log('Acesso consentito');
+      // } else {
+      //
+      //   console.log('Accesso negato');
+      // }
+
+      // VERSIONE 2
+      // for (var i = 0; i < mailData.length; i++) {
+      //
+      //   console.log(i, mailData[i]);
+      //
+      //   if (mailUser == mailData[i]) {
+      //
+      //     console.log('Accesso consentito');
+      //   } else {
+      //
+      //     console.log('Accesso negato');
+      //   }
+      // }
+
+
+      // Sto lavorando ad una terza soluzione, no spoiler!
+
+
+      // ESERCIZIO DADI
+      var numUser = prompt('Inserisci un numero da 1 a 6');
+      var numBot = Math.floor(Math.random() * 6 + 1);
+
+      console.log('Numero utene: ' + numUser, 'Numero computer: ' + numBot);
+
+      if (numUser > numBot) {
+
+        console.log('Hai vinto!');
+      } else if (numUser < numBot) {
+
+        console.log('Hai perso');
+      } else {
+
+        console.log('Pareggio');
+      }
+
+    </script>
+
+  </body>
+</html>
