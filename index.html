@@ -39,12 +39,30 @@
       // }
 
       // VERSIONE 3
+      // for (var i = 0; i < mailData.length; i++) {
+      //
+      //   if (mailUser === mailData[i]) {
+      //
+      //     console.log('Accesso consentito');
+      //   }
+      // }
+
+      // VERSIONE CORRETTA
+      var found = false;
       for (var i = 0; i < mailData.length; i++) {
 
-        if (mailUser === mailData[i]) {
+        if (mailUser == mailData[i]) {
 
-          console.log('Accesso consentito');
+          found = true;
         }
+      }
+
+      if (found){
+
+        console.log('Accesso consentito');
+      } else {
+
+        console.log('Accesso negato');
       }
 
 
